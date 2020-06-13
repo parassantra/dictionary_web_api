@@ -1,0 +1,99 @@
+{
+    "apiName": "Dictionary Web API",
+    "apiDescription": "Dictionary data for technical terms",
+    "apiVersion": "1.0",
+    "apiAuthor": "Paras Santra",
+    "links": [
+
+      {
+        "rel": "collection",
+        "href": "/api/terms/english",
+        "methods": "GET,POST",
+        "title" : " Display English terms, post english Term"
+      },
+      {
+        "rel": "collection",
+        "href": "/api/terms/english/:word",
+        "methods": "GET",
+        "title": "Search English terms by Word"
+      },
+      {
+        "rel": "item",
+        "href": "/api/terms/english/:id",
+        "methods": "GET",
+        "title": "Search English terms by id"
+      },
+      {
+        "rel": "collection",
+        "href": "/api/terms/english/:id/translations",
+        "methods": "GET",
+        "title": "Translations for specific English term"
+      },
+      {
+        "rel": "item",
+        "href": "/api/terms/english/:id/add-definition",
+        "methods": "PUT",
+        "title" : " Add definition for English terms"
+      },
+      {
+        "rel": "item",
+        "href": "/api/terms/english/helpYes/:id",
+        "methods": "PUT",
+        "title": "Increment Help Yes for English terms"
+      },
+      {
+        "rel": "item",
+        "href": "/api/terms/english/helpNo/:id",
+        "methods": "PUT",
+        "title": "Increment Help Yes for English terms"
+      },
+      {
+        "rel": "item",
+        "href": "/api/terms/english/definition-like/:id",
+        "methods": "PUT",
+        "title": "Increment Definition Like for English terms"
+      },
+      {
+        "rel": "collection",
+        "href": "/api/terms/other",
+        "methods": "GET,POST",
+        "title" : " Display Other terms, post Other Term"
+      },
+      {
+        "rel": "collection",
+        "href": "/api/terms/other/:word",
+        "methods": "GET",
+        "title": "Search Other terms by Word"
+      },
+      {
+        "rel": "item",
+        "href": "/api/terms/other/:id",
+        "methods": "GET",
+        "title": "Search Other terms by Id"
+      },
+      {
+        "rel": "item",
+        "href": "/api/terms/other/:id/add-definition",
+        "methods": "PUT",
+         "title" : " Add definition for Other terms"
+      },
+      {
+        "rel": "item",
+        "href": "/api/terms/other/helpYes/:id",
+        "methods": "PUT",
+        "title": "Increment Help Yes for Other terms"
+      },
+      {
+        "rel": "item",
+        "href": "/api/terms/other/helpNo/:id",
+        "methods": "PUT",
+        "title": "Increment Help Yes for Other terms"
+      },
+      {
+        "rel": "item",
+        "href": "/api/terms/other/definition-like/:id",
+        "methods": "PUT",
+        "title": "Increment definition Like for Other terms"
+      }
+    ]
+  }
